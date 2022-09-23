@@ -1,3 +1,4 @@
+
 import random
 
 def imprime_mensagem_abertura():
@@ -6,7 +7,7 @@ def imprime_mensagem_abertura():
 def carrega_palavra_secreta():
     arquivo = open("file.txt", "r")
     conteudo = arquivo.read()
-    numero = random.randrange(1,8)
+    numero = random.randrange(1,10)
     conteudo = conteudo.split(",")
     palavra_secreta = conteudo[numero].upper()
     return palavra_secreta
